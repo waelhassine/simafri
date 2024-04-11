@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <style>
+      @keyframes hoverAnimation {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="navbar" class="bg-white shadow-lg mx-auto w-full">
+      <div class="lg:container lg:mx-auto container mx-auto py-5">
+        <div class="lg:flex lg:flex-row justify-between lg:px-36">
+          <div class="lg:flex lg:flex-row space-x-6 items-center">
+            <img src="./img/simafri-logo.png" alt="simafri" class="w-24 h-8" />
+            <p class="text-blue-500 text-base">Création de site Internet</p>
+            <div>
+              <button
+                id="dropdownDefaultButton"
+                data-dropdown-toggle="dropdown"
+                class="text-base text-blue-500 flex flex-row items-center"
+                type="button"
+              >
+                Logiciels
+                <svg
+                  class="w-2.5 h-2.5 ms-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div
+                id="dropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-56"
+              >
+                <ul
+                  class="py-2 text-gray-700"
+                  aria-labelledby="dropdownDefaultButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel ERP</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel de Facturation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel CRM Gestion Commerciale</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel Gestion Stock</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel Gestion Locative</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel Gestion Projet</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel Comptabilité</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Tarifs Dolisim</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Services IT</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <button
+                id="dropdownDefaultButton"
+                data-dropdown-toggle="hosting"
+                class="text-base text-blue-500 flex flex-row items-center"
+                type="button"
+              >
+                Hosting
+                <svg
+                  class="w-2.5 h-2.5 ms-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div
+                id="hosting"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-56"
+              >
+                <ul
+                  class="py-2 text-gray-700"
+                  aria-labelledby="dropdownDefaultButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel ERP</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel de Facturation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel CRM Gestion Commerciale</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel Gestion Stock</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel Gestion Locative</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel Gestion Projet</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Logiciel Comptabilité</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Tarifs Dolisim</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 text-blue-500"
+                      >Services IT</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-blue-500 text-base">Fondation Simafri</p>
+            <p class="text-blue-500 text-base">Blog</p>
+          </div>
+          <div class="flex lg:flex-row lg:space-x-3">
+            <button
+              class="px-4 py-2 border border-blue-500 text-blue-500 rounded"
+            >
+              Contact
+            </button>
+            <button
+              class="px-4 py-2 border border-blue-500 text-blue-500 rounded"
+            >
+              Espace Client
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="header" class="">
+      <div
+        class="h-screen w-full bg-cover bg-center"
+        style="background-image: url('./img/test.png')"
+      >
+        <div
+          class="w-full h-screen lg:flex lg:flex-col justify-center items-center"
+        >
+          <div
+            class="bg-white py-12 px-24 shadow-2xl lg:flex lg:flex-col space-y-4 items-center justify-center"
+          >
+            <img src="./img/fondation-simafri-logo-60px.png" />
+            <h1 class="text-4xl text-center text-blue-500 uppercase">
+              Création de site Internet gratuit<br />
+              pour les associations
+            </h1>
+            <p class="text-gray-900">Et plus encore…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contentOne">
+      <div class="w-full lg:grid lg:grid-cols-2">
+        <div class="col-span-1 lg:col-span-1 bg-[#001c38] w-full h-[700px]">
+          <div class="flex lg:flex-col justify-center items-center h-[700px]">
+            <img src="./img/simafri-sigle-blanc.png" class="hover-animation" />
+          </div>
+        </div>
+        <div class="col-span-1 lg:col-span-1 h-[700px]">
+          <div
+            class="flex flex-col space-y-4 items-start justify-center text-xl text-gray-800 h-[700px] px-8"
+          >
+            <p>
+              La Fondation Simafri crée, héberge et assure la maintenance de
+              sites Internet pour les associations à but non lucratif.
+            </p>
+            <p>
+              Nous épaulons également nos bénéficiaires dans leur communication
+              web globale.
+            </p>
+            <p>Les services de la Fondation Simafri sont gratuits.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#0066bf] h-[700px] w-full py-20 px-28">
+      <div class="relative">
+        <div
+          class="flex lg:flex-col lg:space-y-4 items-start justify-start text-xl ml-24"
+        >
+          <img src="./img/icons8-2.png" class="pt-24" />
+          <p class="py-12 px-6 bg-white shadow-lg rounded-lg">
+            Vivre ce n’est pas juste gagner de l’argent, c’est également
+            aider<br />
+            son prochain. C’est pour cela que nous avons décidé de créer la<br />
+            Fondation Simafri. Nous apportons tout notre savoir-faire et nos<br />
+            ressources pour aider ceux qui aident les autres.
+          </p>
+          <p class="text-white ml-12">Simon LEE, fondateur de Simafri</p>
+        </div>
+        <div class="absolute top-10 right-10">
+          <img src="./img/simon-lee.png" class="rounded-lg w-[640px] h-[450]" />
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-[#0066bf] h-[700px] w-full py-20 px-28 lg:flex lg:flex-row"
+    >
+      <div class="w-1/2">
+        <div
+          class="flex lg:flex-col lg:space-y-4 items-start justify-start text-xl ml-24"
+        >
+          <img src="./img/icons8-2.png" class="pt-24" />
+          <p class="py-12 px-6 bg-white shadow-lg rounded-lg">
+            Vivre ce n’est pas juste gagner de l’argent, c’est également
+            aider<br />
+            son prochain. C’est pour cela que nous avons décidé de créer la<br />
+            Fondation Simafri. Nous apportons tout notre savoir-faire et nos<br />
+            ressources pour aider ceux qui aident les autres.
+          </p>
+          <p class="text-white ml-12">Simon LEE, fondateur de Simafri</p>
+        </div>
+      </div>
+      <div class="w-1/2">
+        <img src="./img/simon-lee.png" class="rounded-lg w-[640px] h-[450]" />
+      </div>
+    </section>
+
+    <script>
+      // JavaScript for hover animation
+      const img = document.querySelector(".hover-animation");
+      img.addEventListener("mouseover", function () {
+        this.style.animation = "hoverAnimation 1s ease-in-out infinite";
+      });
+      img.addEventListener("mouseout", function () {
+        this.style.animation = "none";
+      });
+    </script>
+  </body>
+</html>
