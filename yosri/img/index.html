@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Création de site Internet gratuit pour les associations - Fondation
+      Simafri
+    </title>
+    <meta
+      name="description"
+      content="La Fondation Simafri crée des sites web gratuitement pour les associations à but non lucratif, pour aider ceux qui aident les autres."
+    />
+    <link rel="icon" href="./img/head1.png" sizes="32x32" />
+    <link rel="icon" href="./img/head2.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./img/head3.png" />
+    <meta name="msapplication-TileImage" content="./img/head4.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <style>
+      @keyframes hoverAnimation {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes slideInRight {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .slide-in-right {
+        animation: slideInRight 3s ease-in;
+      }
+      @keyframes slideInLeft {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .slide-in-left {
+        animation: slideInLeft 3s ease-in;
+      }
+      @keyframes zoom-in {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .animate-zoom-in {
+        animation: zoom-in 2s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav class="bg-white border-gray-200">
+        <div
+          class="max-w-screen-xl flex lg:flex-row flex-wrap lg:items-start justify-between mx-auto p-4"
+        >
+          <div class="flex lg:flex-row items-center">
+            <a
+              href="https://www.simafri.com/fr"
+              class="flex items-center space-x-3 rtl:space-x-reverse"
+            >
+              <img
+                src="./img/simafri-logo.png"
+                alt="simafri"
+                class="w-24 h-8"
+              />
+            </a>
+            <button
+              data-collapse-toggle="navbar-multi-level"
+              type="button"
+              class="inline-flex items-center ml-24 p-2 w-10 h-10 justify-center text-sm text-[#60c2f3] rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-multi-level"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden w-full md:block md:w-auto"
+              id="navbar-multi-level"
+            >
+              <ul
+                class="flex flex-col font-medium lg:ml-8 p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-3 md:flex-row md:mt-0 md:border-0 md:bg-white 0"
+              >
+                <li>
+                  <a
+                    href="https://www.simafri.com/fr/creation-site-internet/"
+                    class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-[#60c2f3] md:p-0"
+                    aria-current="page"
+                    >Création de site Internet</a
+                  >
+                </li>
+                <li>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    class="flex items-center justify-between w-full py-2 px-3 text-[#60c2f3] hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+                  >
+                    Logiciels
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbar"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-72"
+                  >
+                    <ul
+                      class="py-2 text-[#60c2f3]"
+                      aria-labelledby="dropdownLargeButton"
+                    >
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/logiciel-erp-dolisim/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Logiciel ERP</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/logiciel-facturation/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Logiciel de Facturation</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/logiciel-crm/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Logiciel CRM Gestion Commerciale</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/logiciel-gestion-stock/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Logiciel Gestion Stock</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/logiciel-gestion-locative/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Logiciel Gestion Locative</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/logiciel-gestion-projet/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Logiciel Gestion Projet</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/logiciel-comptabilite/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Logiciel Comptabilité</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/tarifs-dolisim"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Tarifs Dolisim</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/externalisation-it/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Services IT</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <button
+                    id="dropdownNavbarLinkr"
+                    data-dropdown-toggle="dropdownNavbarr"
+                    class="flex items-center justify-between w-full py-2 px-3 text-[#60c2f3] hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+                  >
+                    Hostings
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbarr"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-72"
+                  >
+                    <ul
+                      class="py-2 text-[#60c2f3]"
+                      aria-labelledby="dropdownLargeButton"
+                    >
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/vps-infogere/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >VPS infogérés</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/hebergement-web-emails/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Hébergement Web et Emails</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/hebergement-web-stockage/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Hébergement Web avec Stockage</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/hebergement-mail/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Hébergement Mail Professionnel</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/hebergement-web-ultra/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Hébergement Web ULTRA</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/hebergement-web-gratuit/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Hébergement Web Gratuit</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.simafri.com/fr/easy-email-pro/"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Easy Email Pro</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://manager.simafri.com/cart.php?a=add&domain=register&language=French&currency=1"
+                          class="block px-4 py-2 hover:bg-[#60c2f3] hover:bg-opacity-10 hover:text-blue-500"
+                          >Commander un nom de domaine</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.simafri.com/fr/site-gratuit-association/"
+                    class="block py-2 px-3 text-[#60c2f3] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#60c2f3] md:p-0"
+                    >Fontation Simati</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.simafri.com/fr/blog/"
+                    class="block py-2 px-3 text-[#60c2f3] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#60c2f3] md:p-0"
+                    >Bloc</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden md:block space-x-2">
+            <a
+              href="https://manager.simafri.com/submitticket.php?step=2&deptid=9&language=french"
+              class="px-4 py-2 border border-[#60c2f3] text-[#60c2f3] rounded hover:bg-[#0066BF] hover:text-white"
+            >
+              Contact
+            </a>
+            <a
+              href="https://manager.simafri.com/clientarea.php?language=french"
+              class="px-4 py-2 border border-[#60c2f3] text-[#60c2f3] rounded hover:bg-[#0066BF] hover:text-white"
+            >
+              Espace Client
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="header">
+      <div
+        class="h-screen w-full bg-cover bg-center"
+        style="background-image: url('./img/test.png')"
+      >
+        <div
+          class="w-full h-screen lg:flex lg:flex-col flex-col justify-center items-center"
+        >
+          <div
+            class="bg-white py-10 lg:w-[800px] m-2 shadow-3xl lg:flex lg:flex-col space-y-4 items-center justify-center overflow-hidden animate-zoom-in"
+          >
+            <img src="./img/fondation-simafri-logo-60px.png" />
+            <h1
+              class="lg:text-4xl text-2xl text-center text-[#52b4ec] uppercase"
+            >
+              Création de site Internet gratuit<br />
+              pour les associations
+            </h1>
+            <p class="text-gray-900">Et plus encore…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------- -->
+    <!-- Start section content one -->
+    <section id="contentOne">
+      <div class="w-full lg:grid lg:grid-cols-2">
+        <div class="col-span-1 lg:col-span-1 bg-[#001c38] w-full h-[700px]">
+          <div class="flex lg:flex-col justify-center items-center h-[700px]">
+            <img src="./img/simafri-sigle-blanc.png" class="hover-animation" />
+          </div>
+        </div>
+        <div class="col-span-1 lg:col-span-1 h-[700px]">
+          <div
+            class="flex flex-col space-y-4 items-start justify-center text-xl text-gray-800 h-[700px] px-8"
+          >
+            <p>
+              La Fondation Simafri crée, héberge et assure la maintenance de
+              sites Internet pour les associations à but non lucratif.
+            </p>
+            <p>
+              Nous épaulons également nos bénéficiaires dans leur communication
+              web globale.
+            </p>
+            <p>Les services de la Fondation Simafri sont gratuits.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#0066bf] w-full py-20 lg:px-28 px-2">
+      <div class="lg:relative flex flex-col">
+        <div class="lg:absolute slideInRight">
+          <div class="relative lg:ml-24 lg:mt-16 lg:top-20">
+            <img src="./img/icons8-2.png" class="lg:absolute" />
+            <div
+              class="flex lg:flex-col flex-col lg:space-y-4 items-start justify-start text-xl lg:ml-12 lg:pt-12"
+            >
+              <p
+                class="lg:py-12 lg:px-6 bg-white w-full shadow-lg rounded-lg text-[#3f86cd]"
+              >
+                Vivre ce n’est pas juste gagner de l’argent, c’est également
+                aider<br />
+                son prochain. C’est pour cela que nous avons décidé de créer
+                la<br />
+                Fondation Simafri. Nous apportons tout notre savoir-faire et
+                nos<br />
+                ressources pour aider ceux qui aident les autres.
+              </p>
+              <p class="text-white ml-2 text-sm">
+                Simon LEE, fondateur de Simafri
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full slideInLeft">
+          <img
+            src="./img/simon-lee.png"
+            class="rounded-lg w-[640px] h-[450] ml-auto"
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-[#dbf0fb] w-full flex lg:flex-col flex-col lg:space-y-8 justify-center items-center pt-24"
+    >
+      <p class="text-4xl text-[#4db2ed]">
+        Pourquoi un site web pour une association ?
+      </p>
+      <div
+        class="grid lg:grid-cols-7 gap-5 lg:px-24 px-2 py-16 place-items-center"
+      >
+        <div class="lg:col-span-4">
+          <img
+            src="./img/test (2).png"
+            class="rounded-lg shadow-lg w-[800px] h-[450]"
+          />
+        </div>
+        <div class="lg:col-span-3">
+          <div
+            class="py-8 px-4 overflow-hidden bg-gradient-to-r from-white to-transport rounded-lg flex flex-col space-y-3 justify-center items-start slide-in-right"
+          >
+            <p class="text-2xl text-[#4db2ed]">Pour partager vos actualités</p>
+            <p class="text-gray-800">
+              Grâce à un site web, votre association pourra partager ses
+              actualités, ses événements futurs, ses photos, ses actions, etc.
+              Votre cause mérite d’être connue.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section divider start -->
+    <section>
+      <div
+        class="flex lg:flex-row justify-center items-center space-x-4 bg-[#dbf0fb]"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <img src="./img/smile.png" alt="smile" width="60" height="60" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+      </div>
+    </section>
+    <!-- end section devider -->
+    <section
+      class="bg-[#dbf0fb] w-full flex lg:flex-col lg:space-y-8 justify-center items-center"
+    >
+      <div
+        class="grid lg:grid-cols-7 gap-5 lg:px-24 px-2 py-16 place-items-center"
+      >
+        <div class="lg:col-span-3">
+          <div
+            class="py-8 px-4 overflow-hidden bg-gradient-to-l from-white to-transport rounded-lg flex flex-col space-y-3 justify-center items-end slide-in-right w-full"
+          >
+            <p class="text-2xl text-[#4db2ed] text-right">
+              Pour recruter des bénévoles
+            </p>
+            <p class="text-gray-800 text-right">
+              Toutes les associations ont besoin de bénévoles. Utilisez votre
+              site Internet pour recruter des volontaires. Sortez de l’ombre et
+              réunissez des personnes qui partagent votre vision.
+            </p>
+          </div>
+        </div>
+        <div class="lg:col-span-4">
+          <img
+            src="./img/img1.png"
+            class="rounded-lg shadow-lg w-[800px] h-[450]"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- section divider start -->
+    <section>
+      <div
+        class="flex lg:flex-row justify-center items-center space-x-4 bg-[#dbf0fb]"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <img src="./img/smile.png" alt="smile" width="60" height="60" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+      </div>
+    </section>
+    <!-- end section devider -->
+    <section
+      class="bg-[#dbf0fb] w-full flex lg:flex-col lg:space-y-8 justify-center items-center"
+    >
+      <div
+        class="grid lg:grid-cols-7 gap-5 lg:px-24 px-2 py-16 place-items-center"
+      >
+        <div class="lg:col-span-4">
+          <img
+            src="./img/img2.png"
+            class="rounded-lg shadow-lg w-[800px] h-[450]"
+          />
+        </div>
+        <div class="lg:col-span-3">
+          <div
+            class="py-8 px-4 overflow-hidden bg-gradient-to-r from-white to-transport rounded-lg flex flex-col space-y-3 justify-center items-start slide-in-right"
+          >
+            <p class="text-2xl text-[#4db2ed]">
+              Pour que vos bénéficiaires vous trouvent
+            </p>
+            <p class="text-gray-800">
+              Faites en sorte que ceux qui ont besoin de vos services vous
+              trouvent ! Grâce à un site web, votre association gagnera en
+              visibilité dans les moteurs de recherche.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section divider start -->
+    <section>
+      <div
+        class="flex lg:flex-row justify-center items-center space-x-4 bg-[#dbf0fb]"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <img src="./img/smile.png" alt="smile" width="60" height="60" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+      </div>
+    </section>
+    <!-- end section devider -->
+    <section
+      class="bg-[#dbf0fb] w-full flex lg:flex-col lg:space-y-8 justify-center items-center"
+    >
+      <div
+        class="grid lg:grid-cols-7 gap-5 lg:px-24 px-2 py-16 place-items-center"
+      >
+        <div class="lg:col-span-3">
+          <div
+            class="py-8 px-4 overflow-hidden bg-gradient-to-l from-white to-transport rounded-lg flex flex-col space-y-3 justify-center items-end slide-in-right w-full"
+          >
+            <p class="text-2xl text-[#4db2ed] text-right">
+              Pour remercier vos bénévoles et partenaires
+            </p>
+            <p class="text-gray-800 text-right">
+              Quoi de mieux qu’une page « Notre équipe » ou « Nos partenaires »
+              pour remercier comme il se doit ceux qui permettent à votre
+              association de fonctionner ? Cohésion d’équipe garantie.
+            </p>
+          </div>
+        </div>
+        <div class="lg:col-span-4">
+          <img
+            src="./img/img3.png"
+            class="rounded-lg shadow-lg w-[800px] h-[450]"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- section divider start -->
+    <section>
+      <div
+        class="flex lg:flex-row justify-center items-center space-x-4 bg-[#dbf0fb]"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <img src="./img/smile.png" alt="smile" width="60" height="60" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+      </div>
+    </section>
+    <!-- end section devider -->
+    <section
+      class="bg-[#dbf0fb] w-full flex lg:flex-col lg:space-y-8 justify-center items-center"
+    >
+      <div
+        class="grid lg:grid-cols-7 gap-5 lg:px-24 px-2 py-16 place-items-center"
+      >
+        <div class="lg:col-span-4">
+          <img
+            src="./img/img4.png"
+            class="rounded-lg shadow-lg w-[800px] h-[450]"
+          />
+        </div>
+        <div class="lg:col-span-3">
+          <div
+            class="py-8 px-4 overflow-hidden bg-gradient-to-r from-white to-transport rounded-lg flex flex-col space-y-3 justify-center items-start slide-in-right"
+          >
+            <p class="text-2xl text-[#4db2ed]">
+              Pour collecter des dons et vendre en ligne
+            </p>
+            <p class="text-gray-800">
+              Même pour une association, l’argent reste le nerf de la guerre. Un
+              site web facilitera la collecte de dons à travers le monde, ou
+              vous permettra même de vendre en ligne.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="flex lg:flex-row justify-center items-center space-x-4 bg-[#dbf0fb]"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <img src="./img/smile.png" alt="smile" width="60" height="60" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          height="15px"
+          viewBox="0 0 20 16"
+          fill="none"
+          stroke="#4db2ed"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-miterlimit="10"
+        >
+          <g transform="translate(-12.000000, 0)">
+            <path d="M28,0L10,18" />
+            <path d="M18,0L0,18" />
+            <path d="M48,0L30,18" />
+            <path d="M38,0L20,18" />
+          </g>
+        </svg>
+      </div>
+    </section>
+    <section
+      class="bg-[#dbf0fb] w-full flex lg:flex-col lg:space-y-8 justify-center items-center"
+    >
+      <div
+        class="grid lg:grid-cols-7 gap-5 lg:px-24 px-2 py-16 place-items-center"
+      >
+        <div class="lg:col-span-3">
+          <div
+            class="py-8 px-4 overflow-hidden bg-gradient-to-l from-white to-transport rounded-lg flex flex-col space-y-3 justify-center items-end slide-in-right w-full"
+          >
+            <p class="text-2xl text-[#4db2ed] text-right">
+              Pour obtenir des subventions
+            </p>
+            <p class="text-gray-800 text-right">
+              Augmentez vos chances d’obtenir des subventions en bétonnant votre
+              dossier avec un beau site Internet actif et bien entretenu. Gage
+              de crédibilité et de sérieux pour votre association
+            </p>
+          </div>
+        </div>
+        <div class="lg:col-span-4">
+          <img
+            src="./img/img5.png"
+            class="rounded-lg shadow-lg w-[800px] h-[450]"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#0066bf] py-8 flex justify-center items-center w-full">
+      <p class="text-white text-3xl uppercase text-center">
+        Que fait la Fondation Simafri pour votre association
+      </p>
+    </section>
+    <section class="grid lg:grid-cols-2 w-full lg:h-[600px] place-items-center">
+      <div
+        class="col-span-1 bg-[#fde3e3] h-[600px] py-16 lg:px-20 px-2 flex flex-col space-y-6 justify-center slide-in-left"
+      >
+        <p class="text-2xl text-[#4db2ed]">1. Création du site web</p>
+        <img src="./img/img6.png" class="shadow-xl" />
+        <p class="text-gray-800">
+          Pour chacune de nos associations bénéficiaires, nous créons un site
+          web sur-mesure en utilisant les dernières technologies de
+          programmation.
+        </p>
+      </div>
+      <div
+        class="col-span-1 bg-[#e3fded] h-[600px] py-16 lg:px-20 px-2 flex flex-col space-y-6 justify-center slide-in-right"
+      >
+        <p class="text-2xl text-[#4db2ed]">2. Hébergement web</p>
+        <img src="./img/img7.png" class="shadow-xl" />
+        <p class="text-gray-800">
+          Nous offrons à nos associations bénéficiaires un hébergement web
+          optimisé ainsi que des adresses email professionnelles.
+        </p>
+      </div>
+    </section>
+    <section class="grid lg:grid-cols-2 w-full lg:h-[600px] place-items-center">
+      <div
+        class="col-span-1 bg-[#e3e9fd] h-[600px] py-16 lg:px-20 px-2 flex flex-col space-y-6 justify-center slide-in-left"
+      >
+        <p class="text-2xl text-[#4db2ed]">3. Maintenance applicative</p>
+        <img src="./img/img8.png" class="shadow-xl" />
+        <p class="text-gray-800">
+          Nous assurons la maintenance logicielle en continue pour garantir que
+          les sites web de nos bénéficiaires soient toujours en ligne, optimisés
+          et sécurisés.
+        </p>
+      </div>
+      <div
+        class="col-span-1 bg-[#fcfde3] h-[600px] py-16 lg:px-20 px-2 flex flex-col space-y-6 justify-center slide-in-right"
+      >
+        <p class="text-2xl text-[#4db2ed]">4. Accompagnement webmarketing</p>
+        <img src="./img/img9.png" class="shadow-xl" />
+        <p class="text-gray-800">
+          Nous conseillons et accompagnons nos bénéficiaires dans le
+          développement de leur visibilité sur Internet et l’optimisation de
+          leurs outils de communication.
+        </p>
+      </div>
+    </section>
+    <section class="bg-black">
+      <div
+        class="w-full lg:px-48 px-2 py-2 lg:py-8 flex flex-col space-y-6 justify-center items-center"
+      >
+        <p class="text-white text-3xl">Exemples de réalisation</p>
+        <div class="grid lg:grid-cols-3 gap-8 pt-24">
+          <div
+            class="col-span-1 rounded-lg bg-white p-8 flex flex-col space-y-6 justify-center items-center bg-white"
+          >
+            <p class="text-[#4db2ed] text-2xl">Sombiniaina</p>
+            <img src="./img/img10.png" />
+            <a
+              href="https://sombiniaina.org/"
+              class="bg-[#4db2ed] p-2 px-4 rounded text-white"
+            >
+              Visiter la site
+            </a>
+          </div>
+          <div
+            class="col-span-1 rounded-lg bg-white p-8 flex flex-col space-y-6 justify-center items-center bg-white"
+          >
+            <p class="text-[#4db2ed] text-2xl">Gasy Animal Aid</p>
+            <img src="./img/img11.png" />
+            <a
+              href="https://gasyanimalaid.org/"
+              class="bg-[#4db2ed] p-2 px-4 rounded text-white"
+            >
+              Visiter la site
+            </a>
+          </div>
+          <div
+            class="col-span-1 rounded-lg bg-white p-8 flex flex-col space-y-6 justify-center items-center bg-white"
+          >
+            <p class="text-[#4db2ed] text-2xl">Tontolo Sy Kajy</p>
+            <img src="./img/img12.png" />
+            <a
+              href="https://tontolosykajy.mg/"
+              class="bg-[#4db2ed] p-2 px-4 rounded text-white"
+            >
+              Visiter la site
+            </a>
+          </div>
+          <div
+            class="col-span-1 rounded-lg bg-white p-8 flex flex-col space-y-6 justify-center items-center bg-white"
+          >
+            <p class="text-[#4db2ed] text-2xl">Masaka</p>
+            <img src="./img/img13.png" />
+            <a
+              href="https://masaka.mg/"
+              class="bg-[#4db2ed] p-2 px-4 rounded text-white"
+            >
+              Visiter la site
+            </a>
+          </div>
+          <div
+            class="col-span-1 rounded-lg bg-white p-8 flex flex-col space-y-6 justify-center items-center bg-white"
+          >
+            <p class="text-[#4db2ed] text-2xl">Association de l'Île</p>
+            <img src="./img/img14.png" />
+            <a
+              href="https://associationdelile.org/"
+              class="bg-[#4db2ed] p-2 px-4 rounded text-white"
+            >
+              Visiter la site
+            </a>
+          </div>
+          <div
+            class="col-span-1 rounded-lg bg-white p-8 flex flex-col space-y-6 justify-center items-center bg-white"
+          >
+            <p class="text-[#4db2ed] text-2xl">Challenge for kids</p>
+            <img src="./img/img15.png" />
+            <a
+              href="https://challengeforkids.mg/"
+              class="bg-[#4db2ed] p-2 px-4 rounded text-white"
+            >
+              Visiter la site
+            </a>
+          </div>
+          <div
+            class="col-span-1 rounded-lg bg-white p-8 flex flex-col space-y-6 justify-center items-center bg-white"
+          >
+            <p class="text-[#4db2ed] text-2xl">Amautismes</p>
+            <img src="./img/img16.png" />
+            <a
+              href="https://amautisme.org/"
+              class="bg-[#4db2ed] p-2 px-4 rounded text-white"
+            >
+              Visiter la site
+            </a>
+          </div>
+          <div
+            class="col-span-1 rounded-lg bg-white p-8 flex flex-col space-y-6 justify-center items-center bg-white"
+          >
+            <p class="text-[#4db2ed] text-2xl">Vakamiarina</p>
+            <img src="./img/img17.png" />
+            <a
+              href="https://vakamiarina.org/"
+              class="bg-[#4db2ed] p-2 px-4 rounded text-white"
+            >
+              Visiter la site
+            </a>
+          </div>
+          <div
+            class="col-span-1 rounded-lg bg-white p-8 flex flex-col space-y-6 justify-center items-center bg-white"
+          >
+            <p class="text-[#4db2ed] text-2xl">AJEPAD RDC</p>
+            <img src="./img/img18.png" />
+            <a
+              href="https://ajepad-rdc.org/"
+              class="bg-[#4db2ed] p-2 px-4 rounded text-white"
+            >
+              Visiter la site
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full bg-[#f6f6f6] lg:px-32 px-2 grid lg:grid-cols-2 lg:h-[600px]"
+    >
+      <div
+        class="col-span-1 lg:h-[600px] flex flex-col justify-center items-center"
+      >
+        <img src="./img/cloud-simafri.png" />
+      </div>
+      <div
+        class="col-span-1 lg:h-[600px] flex flex-col space-y-6 items-stretch justify-center px-8"
+      >
+        <p class="text-3xl text-[#4db2ed] uppercase">
+          Comment devenir bénéficiaire ?
+        </p>
+        <p class="text-gray-800 text-xl text-gray-800">
+          Si vous êtes une association à but non lucratif, n’hésitez pas à nous
+          écrire pour vous présenter, nous étudions toutes les candidatures.
+        </p>
+        <a
+          href="https://manager.simafri.com/submitticket.php?step=2&deptid=12&language=french"
+          class="bg-[#4db2ed] text-white text-center text-xl py-3 rounded-lg hover:bg-[#0066FB]"
+        >
+          Écrivez-nous
+        </a>
+      </div>
+    </section>
+    <section
+      class="w-full mx-auto bg-white lg:px-32 px-2 lg:py-28 py-8 flex flex-col justify-center items-center space-y-8"
+    >
+      <p class="text-3xl text-[#4db2ed]">QUESTIONS FRÉQUENTES</p>
+      <div
+        class="flex flex-col space-y-2 justify-start items-start lg:w-[650px]"
+      >
+        <p class="text-2xl text-[#4db2ed]">
+          Est-ce que tout est vraiment gratuit ? Devrons-nous payer quelque
+          chose
+        </p>
+        <p class="text-base/7 text-gray-800">
+          Tous nos services pour les associations à but non lucratif sont
+          absolument gratuits. Il n’y a pas d’options payantes. Tout ce que nous
+          proposons à nos clients habituels est offert gratuitement aux
+          bénéficiaires de notre fondation. La création du site web est 100%
+          gratuite,
+          <a
+            class="text-[#4db2ed]"
+            href="https://www.simafri.com/fr/hebergement-web-gratuit/"
+            >l’hébergement web est gratuit</a
+          >, l’infogérance est offerte, l’accompagnement webmarketing est
+          gratuit.
+        </p>
+      </div>
+      <div
+        class="flex flex-col space-y-2 justify-start items-start lg:w-[650px]"
+      >
+        <p class="text-2xl text-[#4db2ed]">
+          En combien de temps créerez-vous le site Internet de notre association
+          ?
+        </p>
+        <p class="text-base/7 text-gray-800">
+          Tout dépend de nos plannings de production. Nos bénéficiaires sont
+          traités exactement comme nos clients, et
+          <a
+            class="text-[#4db2ed]"
+            href="https://www.simafri.com/fr/creation-site-internet/"
+            >création de leur site Internet</a
+          >
+          a la même priorité. Habituellement Il faut compter entre 1 à 3
+          semaines suivant la disponibilité de nos équipes et la complexité du
+          site web à réaliser. Dans tous les cas, vous serez tenus régulièrement
+          informés de l’évolution de votre projet et vous pourrez solliciter
+          notre service client à tout moment.
+        </p>
+      </div>
+      <div
+        class="flex flex-col space-y-2 justify-start items-start lg:w-[650px]"
+      >
+        <p class="text-2xl text-[#4db2ed]">
+          Dans quels pays votre offre de création de site Internet gratuit
+          est-elle valable ?
+        </p>
+        <p class="text-base/7 text-gray-800">
+          Les services de la Fondation Simafri sont proposés
+          <strong>aux associations du monde entier.</strong> Les deux seules
+          conditions sont que l’association doit être à but non lucratif et
+          qu’elle doit officiellement être déclarée dans son pays de résidence.
+        </p>
+      </div>
+      <div
+        class="flex flex-col space-y-2 justify-start items-start lg:w-[650px]"
+      >
+        <p class="text-2xl text-[#4db2ed]">
+          Pouvez-vous créer un site gratuit pour une association loi 1901 ?
+        </p>
+        <p class="text-base/7 text-gray-800">
+          Une association loi 1901 est le terme juridique utilisé en France pour
+          désigner une association à but non lucratif. Donc oui, a fortiori,
+          nous pouvons créer des sites gratuits pour les associations loi 1901.
+        </p>
+      </div>
+      <div
+        class="flex flex-col space-y-2 justify-start items-start lg:w-[650px]"
+      >
+        <p class="text-2xl text-[#4db2ed]">
+          Disposerons-nous également d'adresses email professionnelles ?
+        </p>
+        <p class="text-base/7 text-gray-800">
+          Oui, vous disposerez également d’une messagerie d’entreprise
+          gratuitement avec un nombre illimité d’adresses email professionnelles
+          (comme par exemple julie@votreassociation.org).
+        </p>
+      </div>
+      <div
+        class="flex flex-col space-y-2 justify-start items-start lg:w-[650px]"
+      >
+        <p class="text-2xl text-[#4db2ed]">
+          Quels sont les autres services que vous offrez aux associations à part
+          la création gratuite de leur site web ?
+        </p>
+        <p class="text-base/7 text-gray-800">
+          En plus de créer gratuitement le site Internet des associations, nous
+          leur offrons également
+          <a
+            class="text-[#4db2ed]"
+            href="https://www.simafri.com/fr/hebergement-web-emails/"
+          >
+            l’hébergement web</a
+          >, la messagerie d’entreprise, l’infogérance et l’accompagnement
+          webmarketing. Nous ne nous contentons pas de créer un site web, nous
+          voulons que nos bénéficiaires tirent un réel avantage de l’Internet.
+        </p>
+      </div>
+      <div
+        class="flex flex-col space-y-2 justify-start items-start lg:w-[650px]"
+      >
+        <p class="text-2xl text-[#4db2ed]">
+          Pourquoi offrez-vous gratuitement des sites web aux associations ?
+        </p>
+        <p class="text-base/7 text-gray-800">
+          Le fondateur de l’agence digitale Simafri, M. Simon Lee, s’est rendu
+          compte que travailler pour gagner de l’argent n’était pas un but en
+          soi. La vie doit d’abord servir à aider autrui. Après avoir longuement
+          réfléchi sur la manière dont nous pourrions avoir un meilleur sens à
+          notre vie, nous sommes arrivés à la conclusion que ce serait en aidant
+          ceux qui aident les autres en leur apportant notre forte expertise en
+          communication sur Internet. Et la Fondation Simafri fut créée.
+        </p>
+      </div>
+      <div
+        class="flex flex-col space-y-2 justify-start items-start lg:w-[650px]"
+      >
+        <p class="text-2xl text-[#4db2ed]">
+          Quelle est la procédure pour obtenir son site web gratuit ?
+        </p>
+        <p class="text-base/7 text-gray-800">
+          La procédure est extrêmement simple et met l’accent sur une relation
+          directe et humaine. Commencez par rentrer en contact avec nous en nous
+          écrivant via le
+          <a
+            class="text-[#4db2ed]"
+            href="https://manager.simafri.com/submitticket.php?step=2&amp;deptid=12&amp;language=french"
+            >formulaire en ligne</a
+          >. Le responsable de la constitution des dossiers de la fondation vous
+          proposera alors un rendez-vous en visio. Une fois votre dossier
+          constitué, ce dernier passe en comité de sélection. Et si votre projet
+          est retenu, une équipe constituée d’un chef de projet, d’un webmaster
+          et d’un infographiste prendra la relève et créera votre site web
+          gratuitement après avoir analysé vos besoins.
+        </p>
+      </div>
+    </section>
+    <section
+      class="w-full flex flex-col justify-center items-center bg-[#001c38] space-y-8 py-24"
+    >
+      <p class="text-white text-2xl uppercase mt-8 text-center">
+        Simafri, des techniciens expérimentés sur qui vous pouvez compter
+      </p>
+      <p class="text-white">_______________</p>
+      <div class="grid lg:grid-cols-4 gap-1 lg:w-[1100px]">
+        <div class="col-span-1 flex flex-col p-4">
+          <p class="text-white text-base uppercase">ACCÈS RAPIDES</p>
+          <a
+            href="https://www.simafri.com/fr/categorie/blog/"
+            class="text-[#4db2eb] text-sm mt-2 flex flex-row space-x-2 justify-start items-center"
+            ><img src="./img/right-arrow-.png" width="16px" height="16px" />
+            Blog</a
+          >
+          <a
+            href="https://manager.simafri.com/clientarea.php?language=french"
+            class="text-[#4db2eb] text-sm flex flex-row space-x-1 justify-start items-center"
+            ><img
+              src="./img/right-arrow-.png"
+              width="16px"
+              height="16px"
+            />Espace client</a
+          >
+          <a
+            href="https://manager.simafri.com/submitticket.php?step=2&deptid=2&language=french"
+            class="text-[#4db2eb] text-sm flex flex-row space-x-1 justify-start items-center"
+            ><img
+              src="./img/right-arrow-.png"
+              width="16px"
+              height="16px"
+            />Support client</a
+          >
+          <a
+            href="https://manager.simafri.com/submitticket.php?step=2&deptid=9&language=french"
+            class="text-[#4db2eb] text-sm flex flex-row space-x-1 justify-start items-center"
+            ><img
+              src="./img/right-arrow-.png"
+              width="16px"
+              height="16px"
+            />Contactez-nous</a
+          >
+          <a
+            href="https://www.simafri.com/fr/confidentialite/"
+            class="text-[#4db2eb] text-sm flex flex-row space-x-1 justify-start items-center"
+            ><img
+              src="./img/right-arrow-.png"
+              width="16px"
+              height="16px"
+            />Politique de confidentialité</a
+          >
+          <a
+            href="https://www.simafri.com/fr/cgv/"
+            class="text-[#4db2eb] text-sm flex flex-row space-x-1 justify-start items-center"
+          >
+            <img src="./img/right-arrow-.png" width="16px" height="16px" />
+            Conditions de vente et d'utilisation
+          </a>
+        </div>
+        <div class="col-span-1 flex flex-col space-y-3 p-4">
+          <p class="text-white text-base uppercase">PROGRAMME REVENDEUR</p>
+          <p class="text-gray-500 text-sm">
+            Vous souhaitez revendre nos services ou nous représenter dans un
+            pays ? Nous avons un programme partenaire pour vous. Pour en savoir
+            plus,<a
+              class="text-blue-500"
+              href="https://manager.simafri.com/submitticket.php?step=2&deptid=13&language=french"
+              >contactez-nous</a
+            >
+          </p>
+        </div>
+        <div class="col-span-1 flex flex-col space-y-3 p-4">
+          <p class="text-white text-base uppercase">SIMAFRI EUROPE</p>
+          <p class="text-gray-500 text-sm">
+            Kubánské náměstí 1391/11 100 00 Prague 10 République tchèque
+          </p>
+        </div>
+        <div class="col-span-1 flex flex-col space-y-3 p-4">
+          <p class="text-white text-base uppercase">SIMAFRI AFRIQUE</p>
+          <p class="text-gray-500 text-sm">
+            24 Saint Georges Street 11324 Port-Louis Maurice
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full flex lg:flex-row lg:justify-between bg-[#001c38] border-t border-gray-700 py-4 lg:px-36 text-gray-400"
+    >
+      <p class="text-xs">© Tous droits réservés</p>
+      <p class="text-xs">Créé avec ❤ par Simafri</p>
+    </section>
+    <!-- --------------- -->
+    <!-- End section content one -->
+    <script>
+      // JavaScript for hover animation
+      const img = document.querySelector(".hover-animation");
+      img.addEventListener("mouseover", function () {
+        this.style.animation = "hoverAnimation 1s ease-in-out infinite";
+      });
+      img.addEventListener("mouseout", function () {
+        this.style.animation = "none";
+      });
+    </script>
+  </body>
+</html>
