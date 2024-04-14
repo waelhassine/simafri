@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Création de site Internet gratuit pour les associations - Fondation
+      Simafri
+    </title>
+    <meta
+      name="description"
+      content="La Fondation Simafri crée des sites web gratuitement pour les associations à but non lucratif, pour aider ceux qui aident les autres."
+    />
+    <link rel="icon" href="./img/head1.png" sizes="32x32" />
+    <link rel="icon" href="./img/head2.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./img/head3.png" />
+    <meta name="msapplication-TileImage" content="./img/head4.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <style>
+      @keyframes hoverAnimation {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes slideInRight {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .slide-in-right {
+        animation: slideInRight 3s ease-in;
+      }
+      @keyframes slideInLeft {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .slide-in-left {
+        animation: slideInLeft 3s ease-in;
+      }
+      @keyframes zoom-in {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .animate-zoom-in {
+        animation: zoom-in 2s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div
+        class="h-screen w-full bg-cover bg-center"
+        style="background-image: url('./img/test.png')"
+      >
+        <div
+          class="w-full h-screen lg:flex lg:flex-col flex-col justify-center items-center"
+        >
+          <img
+            src="./img/logo version 2.png"
+            alt="solunix groups"
+            width="300px"
+            height="300px"
+          />
+          <div
+            class="bg-white py-10 lg:w-[800px] m-2 shadow-3xl lg:flex lg:flex-col space-y-4 items-center justify-center overflow-hidden animate-zoom-in"
+          >
+            <h1 class="text-2xl">Présente</h1>
+            <h1
+              class="lg:text-4xl text-2xl text-center text-[#0e6fb7] uppercase"
+            >
+              Création de site Internet gratuit<br />
+              pour les associations
+            </h1>
+            <p class="text-gray-900">Et plus encore…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-gray-100 h-screen flex justify-center items-center">
+        <div class="max-w-md w-full bg-white p-8 rounded shadow-lg">
+          <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+          <form action="send_message.php" method="post">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-bold mb-2"
+                >Votre Nom Complete:</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="border border-gray-400 rounded w-full py-2 px-3 focus:outline-none focus:border-blue-400"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-bold mb-2"
+                >Votre Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="border border-gray-400 rounded w-full py-2 px-3 focus:outline-none focus:border-blue-400"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-bold mb-2"
+                >Votre Message:</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="border border-gray-400 rounded w-full py-2 px-3 focus:outline-none focus:border-blue-400"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+            >
+              Envoyer
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full flex flex-col justify-center items-center bg-[#001c38] space-y-8 py-6"
+    >
+      <p class="text-white text-2xl text-center">
+        NigerCloud des techniciens expérimentés sur qui vous pouvez compter
+      </p>
+    </section>
+    <section
+      class="w-full flex lg:flex-row lg:justify-between bg-[#001c38] border-t border-gray-700 py-4 lg:px-36 text-gray-400"
+    >
+      <p class="text-xs">Copyright Solunix Groups © 2024</p>
+      <p class="text-xs">Créé avec ❤ par NigerCloud</p>
+    </section>
+  </body>
+</html>
