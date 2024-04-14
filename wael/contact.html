@@ -101,13 +101,13 @@
       </div>
     </section>
     <section>
-      <div class="bg-gray-100 h-screen flex justify-center items-center">
-        <div class="max-w-md w-full bg-white p-8 rounded shadow-lg">
-          <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+      <div class="bg-gray-100 py-8 flex justify-center items-center">
+        <div class="max-w-[600px] w-full bg-white p-8 rounded shadow-lg">
+          <h2 class="text-2xl font-semibold mb-4">Soumettre votre demande</h2>
           <form action="send_message.php" method="post">
             <div class="mb-4">
               <label for="name" class="block text-gray-700 font-bold mb-2"
-                >Votre Nom Complete:</label
+                >Nom et prénom du demandeur :</label
               >
               <input
                 type="text"
@@ -117,8 +117,30 @@
               />
             </div>
             <div class="mb-4">
+              <label for="position" class="block text-gray-700 font-bold mb-2"
+                >Poste occupé :</label
+              >
+              <input
+                type="text"
+                id="position"
+                name="position"
+                class="border border-gray-400 rounded w-full py-2 px-3 focus:outline-none focus:border-blue-400"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="contact" class="block text-gray-700 font-bold mb-2"
+                >Contact téléphonique - (Whatsapp/telegram si possible) :</label
+              >
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                class="border border-gray-400 rounded w-full py-2 px-3 focus:outline-none focus:border-blue-400"
+              />
+            </div>
+            <div class="mb-4">
               <label for="email" class="block text-gray-700 font-bold mb-2"
-                >Votre Email:</label
+                >Votre adresse mail actuelle :</label
               >
               <input
                 type="email"
@@ -128,8 +150,45 @@
               />
             </div>
             <div class="mb-4">
+              <label
+                for="organization"
+                class="block text-gray-700 font-bold mb-2"
+                >Nom de l'organisation bénéficiaire :</label
+              >
+              <input
+                type="text"
+                id="organization"
+                name="organization"
+                class="border border-gray-400 rounded w-full py-2 px-3 focus:outline-none focus:border-blue-400"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="country" class="block text-gray-700 font-bold mb-2"
+                >Pays de localisation de l'ONG :</label
+              >
+              <input
+                type="text"
+                id="country"
+                name="country"
+                class="border border-gray-400 rounded w-full py-2 px-3 focus:outline-none focus:border-blue-400"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="registration"
+                class="block text-gray-700 font-bold mb-2"
+                >N° d'enregistrement auprès des autorisations :</label
+              >
+              <input
+                type="text"
+                id="registration"
+                name="registration"
+                class="border border-gray-400 rounded w-full py-2 px-3 focus:outline-none focus:border-blue-400"
+              />
+            </div>
+            <div class="mb-4">
               <label for="message" class="block text-gray-700 font-bold mb-2"
-                >Votre Message:</label
+                >Votre message :</label
               >
               <textarea
                 id="message"
