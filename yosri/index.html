@@ -217,36 +217,36 @@
     </div>
  
     <section class="bg-gray-200 w-full py-20 lg:px-28 px-2">
-      <div class="lg:relative flex flex-col">
-        <div class="lg:absolute slideInRight">
-          <div class="relative lg:ml-12 lg:mt-8 lg:top-16">
-            <img src="../wael/img/icons8-2.png" class="lg:absolute" />
+      <div class="grid lg:grid-cols-2">
+        <div class="col-span-1">
+          <div class="lg:mt-12">
+            <img src="./img/icons8-2.png" class="lg:absolute" />
             <div
               class="flex lg:flex-col flex-col lg:space-y-4 items-start justify-start text-xl lg:ml-0 lg:pt-2"
             >
               <p
-                class="lg:pt-16 lg:pb-8 lg:px-12 bg-[#1372b8] w-full shadow-3xl rounded-lg text-white"
+                class="lg:pt-16 p-4 lg:pb-8 lg:px-12 bg-[#1372b8] w-full shadow-3xl rounded-lg text-white"
               >
-                Vivre ce n’est pas juste gagner de l’argent, c’est également<br />
-                aider son prochain.<br />
-                C’est pour cela que nous avons décidé créer ce projet de<br />
-                création de site web et la mise à dispositio de 5 adresses<br />
-                mails professionnelles et assurer la maintenance.<br />
-                Nous apportons tout notre savoir-faire et nos ressources
-                <br />pour aider ceux qui aident les autres.
+                Vivre ce n’est pas juste gagner de l’argent, c’est également
+                aider son prochain.<br /><br />
+                C’est pour cela que nous avons décidé de créer ce projet de
+                création de site web et la mise à dispositio de 5 adresses mails
+                professionnelles et assurer la maintenance.<br /><br />Nous
+                apportons tout notre savoir-faire et nos ressources pour aider
+                ceux qui aident les autres.
               </p>
               <p class="text-[#1372b8] ml-2 text-sm">
-                FERNANDEZ Chaptal Charles, CEO Solunix Niger <br />
-                Membre fondateur Solunix Groups
+                Chaptal Charles FERNÀNDEZ,<br />CEO Solunix Niger<br />Membre
+                fondateur Solunix Groups
               </p>
             </div>
           </div>
         </div>
 
-        <div class="w-full slideInLeft">
+        <div class="col-span-1">
           <img
-            src="./img/simon-lee.png"
-            class="rounded-lg w-[640px] h-[450] ml-auto"
+            src="./img/chaptal21.png"
+            class="rounded-lg lg:w-[640px] lg:h-[450] lg:ml-auto w-full h-full p-4"
           />
         </div>
       </div>
@@ -402,107 +402,400 @@
 
 <div class="bg-gray-100 py-20">
   <!-- component -->
-<div class="lg:container lg:mx-auto lg:py-16 md:py-12 md:px-6 py-12 px-4">
-  <h1 class="text-center dark:text-white lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 font-semibold">FAQ's</h1>
 
-  <div class="lg:w-8/12 w-full mx-auto">
-      <!-- Question 1 -->
-      <hr class="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
+  <section
+  class="w-full mx-auto bg-white lg:px-32 px-2 lg:py-28 py-8 flex flex-col justify-center items-center space-y-8 lg:max-w-[1000px]"
+>
+  <p class="text-3xl text-[#1372b8]">QUESTIONS FRÉQUENTES</p>
 
-      <div class="w-full md:px-6">
-          <div id="mainHeading" class="flex justify-between items-center w-full">
-              <div class="">
-                  <p class="flex justify-center items-center dark:text-white font-medium text-base leading-6 md:leading-4 text-gray-800"><span class="lg:mr-6 mr-4 dark:text-white lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q1.</span> How do i know if a product is available in boutiques?</p>
-              </div>
-              <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
-                  <img class="transform dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
-                  <img class="transform dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
-              </button>
-          </div>
-          <div id="menu" class="hidden mt-6 w-full">
-              <p class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">Remember you can query the status of your orders any time in My orders in the My account section. if you are not resigered at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter your e-mail address and order number.</p>
-          </div>
+  <div
+    id="accordion-color"
+    data-accordion="collapse"
+    data-active-classes="bg-blue-100 text-blue-600"
+  >
+    <h2 id="accordion-color-heading-1">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-950 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200"
+        data-accordion-target="#accordion-color-body-1"
+        aria-expanded="true"
+        aria-controls="accordion-color-body-1"
+      >
+        <span class="text-gray-950">
+          Dans quels pays votre offre de création de site Internet gratuit
+          est-elle valable ?</span
+        >
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"
+          />
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-color-body-1"
+      class="hidden"
+      aria-labelledby="accordion-color-heading-1"
+    >
+      <div class="p-5 border border-b-0 border-gray-200">
+        <p class="text-base/7 text-gray-800">
+          Cette initiative de Solunix Groups est proposées aux associations
+          des pays suivants : Guinée - Conakry, Mali, Burkina, Niger,
+          Burundi, Tchad, Bénin et le Togo.<br />
+          <strong
+            >Les deux seules conditions sont que l’association doit être à
+            but non lucratif et qu’elle doit officiellement être déclarée
+            dans son pays de résidence.</strong
+          >
+        </p>
       </div>
-
-      <!-- Question 2 -->
-
-      <hr class="w-full lg:mt-10 my-8" />
-
-      <div class="w-full md:px-6">
-          <div id="mainHeading" class="flex justify-between items-center w-full">
-              <div class="">
-                  <p class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"><span class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q2.</span> How can i find the prices or get other information about chanel products?</p>
-              </div>
-              <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
-                  <img class="transform dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
-                  <img class="transform dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
-              </button>
-          </div>
-          <div id="menu" class="hidden mt-6 w-full">
-              <p class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">Remember you can query the status of your orders any time in My orders in the My account section. if you are not resigered at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter your e-mail address and order number.</p>
-          </div>
+    </div>
+    <h2 id="accordion-color-heading-2">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-950 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200"
+        data-accordion-target="#accordion-color-body-2"
+        aria-expanded="false"
+        aria-controls="accordion-color-body-2"
+      >
+        <span class="text-gray-950"
+          >En combien de temps créerez-vous le site Internet de notre
+          association?</span
+        >
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"
+          />
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-color-body-2"
+      class="hidden"
+      aria-labelledby="accordion-color-heading-2"
+    >
+      <div class="p-5 border border-b-0 border-gray-200">
+        <p class="text-base/7 text-gray-800">
+          Tout dépend de nos plannings de production.<br />
+          Nos bénéficiaires sont traités exactement comme nos clients, et la
+          création de leur site Internet à la même priorité.<strong
+            >Habituellement Il faut compter entre 1 à 2 semaines suivant la
+            disponibilité de notre équipe DevOp et la complexité du site web
+            à réaliser.</strong
+          ><br />
+          Dans tous les cas, vous serez tenus régulièrement informés de
+          l’évolution de votre projet et vous pourrez solliciter notre
+          service client à tout moment.
+        </p>
       </div>
-
-      <!-- Question 3 -->
-
-      <hr class="w-full lg:mt-10 my-8" />
-
-      <div class="w-full md:px-6">
-          <div id="mainHeading" class="flex justify-between items-center w-full">
-              <div class="">
-                  <p class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"><span class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q3.</span>How many collections come out every year?</p>
-              </div>
-              <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
-                  <img class="transform dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
-                  <img class="transform dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
-              </button>
-          </div>
-          <div id="menu" class="hidden mt-6 w-full">
-              <p class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">Remember you can query the status of your orders any time in My orders in the My account section. if you are not resigered at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter your e-mail address and order number.</p>
-          </div>
+    </div>
+    <h2 id="accordion-color-heading-3">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-950 border border-gray-200 focus:ring-4 focus:ring-blue-200"
+        data-accordion-target="#accordion-color-body-3"
+        aria-expanded="false"
+        aria-controls="accordion-color-body-3"
+      >
+        <span class="text-gray-950"
+          >Est-ce que tout est vraiment gratuit? Devrons-nous payer quelque
+          chose?</span
+        >
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"
+          />
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-color-body-3"
+      class="hidden"
+      aria-labelledby="accordion-color-heading-3"
+    >
+      <div class="p-5 border border-t-0 border-gray-200">
+        <p class="text-base/7 text-gray-800">
+          À toute organisation retenue pour cette initiative, nous
+          sollicitons une contribution d'un montant de FCFA 64.000 soit €98
+          payable une seule lors de la création de votre compte pour cinq
+          (5) ans.<br />
+          Tous nos services pour les associations à but non lucratif sont
+          absolument gratuits. Il n’y a pas d’options payantes.<strong>
+            Tout ce que nous proposons à nos clients habituels est offert
+            gratuitement aux bénéficiaires de cette initiative.<br />
+            La création du site web est 100% gratuite, l’hébergement web est
+            gratuit, l’infogérance est offerte, l’accompagnement
+            webmarketing est gratuit.</strong
+          >
+        </p>
       </div>
-
-      <!-- Question 4 -->
-
-      <hr class="w-full lg:mt-10 my-8" />
-
-      <div class="w-full md:px-6">
-          <div id="mainHeading" class="flex justify-between items-center w-full">
-              <div class="">
-                  <p class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"><span class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q4.</span>Are all of the fashion collections features on the website?</p>
-              </div>
-              <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
-                  <img class="transform dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
-                  <img class="transform dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
-              </button>
-          </div>
-          <div id="menu" class="hidden mt-6 w-full">
-              <p class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">Remember you can query the status of your orders any time in My orders in the My account section. if you are not resigered at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter your e-mail address and order number.</p>
-          </div>
+    </div>
+    <h2 id="accordion-color-heading-4">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-950 border border-gray-200 focus:ring-4 focus:ring-blue-200"
+        data-accordion-target="#accordion-color-body-4"
+        aria-expanded="false"
+        aria-controls="accordion-color-body-4"
+      >
+        <span class="text-gray-950"
+          >Pouvez-vous créer un site gratuit pour une association loi
+          1901?</span
+        >
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"
+          />
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-color-body-4"
+      class="hidden"
+      aria-labelledby="accordion-color-heading-4"
+    >
+      <div class="p-5 border border-t-0 border-gray-200">
+        <p class="text-base/7 text-gray-800">
+          Une association loi 1901 est le terme juridique utilisé en France
+          pour désigner une association à but non lucratif.<br />
+          Donc oui, a fortiori, nous pouvons créer des sites gratuits pour
+          les associations loi 1901.
+        </p>
       </div>
-
-      <!-- Question 5 -->
-
-      <hr class="w-full lg:mt-10 my-8" />
-
-      <div class="w-full md:px-6">
-          <div id="mainHeading" class="flex justify-between items-center w-full">
-              <div class="">
-                  <p class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"><span class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q5.</span>Where do i find products that i have seen in magazines or Social Media?</p>
-              </div>
-              <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
-                  <img class="transform dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
-                  <img class="transform dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
-              </button>
-          </div>
-          <div id="menu" class="hidden mt-6 w-full">
-              <p class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">Remember you can query the status of your orders any time in My orders in the My account section. if you are not resigered at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter your e-mail address and order number.</p>
-          </div>
+    </div>
+    <h2 id="accordion-color-heading-5">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-950 border border-gray-200 focus:ring-4 focus:ring-blue-200"
+        data-accordion-target="#accordion-color-body-5"
+        aria-expanded="false"
+        aria-controls="accordion-color-body-5"
+      >
+        <span class="text-gray-950">
+          Disposerons-nous également d'adresses email
+          professionnelles?</span
+        >
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"
+          />
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-color-body-5"
+      class="hidden"
+      aria-labelledby="accordion-color-heading-5"
+    >
+      <div class="p-5 border border-t-0 border-gray-200">
+        <p class="text-base/7 text-gray-800">
+          Oui, vous disposerez également d’une messagerie d’entreprise
+          gratuitement avec cinq (5) d’adresses emails professionnelles
+          (comme par exemple moussa@votreassociation.org).
+        </p>
       </div>
-
-      <hr class="w-full lg:mt-10 my-8" />
+    </div>
+    <h2 id="accordion-color-heading-6">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-950 border border-gray-200 focus:ring-4 focus:ring-blue-200"
+        data-accordion-target="#accordion-color-body-6"
+        aria-expanded="false"
+        aria-controls="accordion-color-body-6"
+      >
+        <span class="text-gray-950"
+          >Quels sont les autres services que vous offrez aux associations à
+          part la création gratuite de leur site web?</span
+        >
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"
+          />
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-color-body-6"
+      class="hidden"
+      aria-labelledby="accordion-color-heading-6"
+    >
+      <div class="p-5 border border-t-0 border-gray-200">
+        <p class="text-base/7 text-gray-800">
+          En plus de créer gratuitement le site Internet des associations,
+          nous leur offrons également l’hébergement web, la messagerie
+          d’entreprise, l’infogérance et l’accompagnement webmarketing. Nous
+          ne nous contentons pas de créer un site web, nous voulons que nos
+          bénéficiaires tirent un réel avantage de l’Internet.
+        </p>
+      </div>
+    </div>
+    <h2 id="accordion-color-heading-7">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-950 border border-gray-200 focus:ring-4 focus:ring-blue-200"
+        data-accordion-target="#accordion-color-body-7"
+        aria-expanded="false"
+        aria-controls="accordion-color-body-7"
+      >
+        <span class="text-gray-950">
+          Pourquoi offrez-vous gratuitement des sites web aux
+          associations?</span
+        >
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"
+          />
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-color-body-7"
+      class="hidden"
+      aria-labelledby="accordion-color-heading-7"
+    >
+      <div class="p-5 border border-t-0 border-gray-200">
+        <p class="text-base/7 text-gray-800">
+          Parce que travailler pour gagner de l’argent n’était pas un but en
+          soi. La vie doit d’abord servir à aider autrui.<br />
+          Après avoir longuement réfléchi sur la manière dont nous pourrions
+          avoir un meilleur sens à notre vie, nous sommes arrivés à la
+          conclusion que ce serait en aidant ceux qui aident les autres en
+          leur apportant notre forte expertise en communication sur
+          Internet. Et le projet de création de site internet pour les ONGs
+          fut créée.
+        </p>
+      </div>
+    </div>
+    <h2 id="accordion-color-heading-8">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-950 border border-gray-200 focus:ring-4 focus:ring-blue-200"
+        data-accordion-target="#accordion-color-body-8"
+        aria-expanded="false"
+        aria-controls="accordion-color-body-8"
+      >
+        <span class="text-gray-950">
+          Quelle est la procédure pour obtenir son site web gratuit?</span
+        >
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"
+          />
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-color-body-8"
+      class="hidden"
+      aria-labelledby="accordion-color-heading-8"
+    >
+      <div class="p-5 border border-t-0 border-gray-200">
+        <p class="text-base/7 text-gray-800">
+          La procédure est extrêmement simple et met l’accent sur une
+          relation directe et humaine.Commencez par rentrer en contact avec
+          nous en nous écrivant via le formulaire en ligne.<br />La
+          responsable (Mme FERNANDEZ Aicha ASOGBA) de la constitution des
+          dossiers de ce projet vous proposera alors un rendez-vous en
+          visio.<br />Une fois votre dossier constitué, ce dernier passe en
+          comité de sélection.<br />Et si votre demande est retenu, une
+          équipe constituée d’un chef de projet, d’un webmaster et d’un
+          graphiste prendra la relève et créera votre site web gratuitement
+          après avoir analysé vos besoins.<br />Si vous avez des questions
+          ou autres, veuillez nous le faire savoir via ce mail :
+          allo@solunixgroups.africa
+        </p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
 
   </div>
@@ -522,24 +815,7 @@
   <p class="text-xs">Créé avec ❤ par NigerCloud</p>
 </section>
 
-<script>
-  let elements = document.querySelectorAll("[data-menu]");
-  for (let i = 0; i < elements.length; i++) {
-  let main = elements[i];
-  
-  main.addEventListener("click", function () {
-  let element = main.parentElement.parentElement;
-  let indicators = main.querySelectorAll("img");
-  let child = element.querySelector("#menu");
-  let h = element.querySelector("#mainHeading>div>p");
-  
-  h.classList.toggle("font-semibold");
-  child.classList.toggle("hidden");
-  // console.log(indicators[0]);
-  indicators[0].classList.toggle("rotate-180");
-  });
-  }
-    </script>
+
     <script>
       // JavaScript for hover animation
       const img = document.querySelector(".hover-animation");
